@@ -56,12 +56,10 @@ I then increased the hidden layers to 3 and set the third hidden layer at 30 as 
 For the second model I decided to use tanh activation and 3 hidden layers with 85, 30, 20 neurons split and a sigmoid activation for output as the output doesn't change. 
 I increased nodes and neurons, with changing other parameters to get a better accuracy but despite doing this both models came below the 64% threshold.
 3: Optimize the Model
-I decided to use an automated model optimizer to get the most accurate model possible by creating method that creates a keras Sequential model using the keras-tuner library with hyperparametes options.  Which will automatically tune the hyperpyrameters until it gets the most accurate model. 
-The best model from the keras tuner method achieved 73% prediction accuracy using a sigmoid activation function with input node of 46, 6 hidden layers at a 51, 81, 71, 6, 41, 91 neurons split and 100 training epochs. 
-Further and Final Optimization
+To decide to use an automated model optimizer to get the most accurate model possible by creating method that creates a keras Sequential model using the keras-tuner library with hyperparametes options.  Which will automatically tune the hyperpyrameters until it gets the most accurate model. 
 I kept the Name column for my final Optimized Model as I still hadn't reached the goal of 75% accuracy. Keeping the keras-tuner the same apart from lowering the epochs from 100 to 50 for time optimization.
 
-**All Top 3 Models were around 73%.**
+**All Top 3 Models were around 64%.**
 
 **Summary:**
 The final automatically optimized neural network trained model from the keras tuner method achieved 73% prediction accuracy with a 55% loss, using a tanh activation function with input node of 26; 5 hidden layers at a 16, 21, 26, 11, 21, neurons split and 50 training epochs. Performing better than the non automated model. Keeping the Name column was crucial in achieving and going beyond the target. This shows the importance of the shape of your datasets before you preprocess it.
